@@ -131,18 +131,22 @@ ul {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     color: #FFFFFF;
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     
 
@@ -154,6 +158,7 @@ ul {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
+    
 
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -308,6 +313,10 @@ ul {
 
 .footer {
     background-color: #2F303A;
+}
+.vault {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Портфолио */
