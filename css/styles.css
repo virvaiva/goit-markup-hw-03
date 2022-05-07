@@ -241,7 +241,7 @@ ul {
 
 .command-title {
     margin-top: 0;
-    margin-bottom: 10;
+    margin-bottom: 10px;
 
     color: var(--title-text-color);
 
