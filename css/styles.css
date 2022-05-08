@@ -113,6 +113,7 @@ ul {
 
 
 .contact-list .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -190,9 +191,18 @@ ul {
 }
 
 
-.feature-section-title {
-    margin-top: 0;
-    opacity: 0;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .feature-list {
@@ -201,6 +211,9 @@ ul {
     
 }
 
+.feature-list .item {
+    width: 270px;
+}
 .feature-list .item + .item {
     margin-left: 30px;
 }
@@ -238,7 +251,9 @@ ul {
     text-transform: uppercase;
     
 }
-
+.command{
+    background-color: #F5F4FA;
+}
 .command-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -252,7 +267,10 @@ ul {
     letter-spacing: 0.03em;
     
 }
-
+.our-command {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .command-list {
     display: flex;
 }
@@ -271,12 +289,14 @@ ul {
 
 .text {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 
 /* Подвал */
 .address {
+    margin-bottom: 9px;
     color: #FFFFFF;
 
     font-style: normal;
@@ -290,10 +310,11 @@ ul {
     color: #FFFFFF;
       
 }
-.container-logo {
+
+.container .logo {
+    display: block;
     margin-bottom: 20px;
 }
-
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
 
@@ -303,6 +324,9 @@ ul {
 
     text-decoration: none;
     
+}
+.footer-item:nth-last-child(2) {
+    margin-bottom: 9px;
 }
 
 .footer-link:hover,
@@ -352,8 +376,6 @@ ul {
 
     cursor: pointer;
 
-
-
 }
 
 .filtr-button:hover,
@@ -367,22 +389,23 @@ ul {
     
 }
 
-.photo {
-    margin-bottom: 20px;
-}
-.border-portfolio {
+
+.portfolio {
     border-right: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 
 }
 
 
 .filtr-title {
-    margin-top: 0;
-    margin-right: 24px;
+    margin-top: 0; 
     margin-bottom: 4px;
-    margin-left: 24px;
+    
 
     color: var(--title-text-color);
 
@@ -390,8 +413,6 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
-
 
 }
 
@@ -414,11 +435,7 @@ ul {
 }
 
 .filtr-text {
-    margin-top: 0;
-    margin-right: 24px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-
+    margin: 0;
     color: var(--primary-text-color);
 
     font-size: 16px;
