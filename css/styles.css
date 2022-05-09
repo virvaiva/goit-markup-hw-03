@@ -314,6 +314,9 @@ ul {
 .container .logo {
     display: block;
 }
+.container .vault {
+    margin-bottom: 20px;
+}
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
 
@@ -336,11 +339,10 @@ ul {
 
 .footer {
     background-color: #2F303A;
-}
-.vault {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 
 /* Портфолио */
 .filtr {
